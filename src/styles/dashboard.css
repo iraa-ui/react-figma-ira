@@ -23,22 +23,106 @@
 }
   
  
-  /* Styling untuk tombol hamburger dan ikon */
+  
 .navbar-toggler {
-  background: none; /* Menghilangkan background tombol */
-  border: none; /* Menghilangkan border */
-  font-size: 24px; /* Ukuran ikon */
-  color: #333; /* Warna ikon */
-  cursor: pointer; /* Kursor pointer untuk tombol */
-  padding: 10px; /* Memberikan ruang di sekitar ikon */
+  background: none; 
+  border: none; 
+  font-size: 24px; 
+  color: #333; 
+  cursor: pointer; 
+  padding: 10px; 
   margin-right: 3%;
 }
 
 .navbar-toggler:hover {
-  color: #d3e1ef; /* Warna saat hover */
+  color: #d3e1ef; 
 }
 
 .navbar-toggler .fa-bars {
-  font-size: 2rem; /* Ukuran font khusus untuk ikon */
+  font-size: 2rem; 
 }
 
+.navbar-menu {
+  position: absolute;
+  top: 60px; 
+  right: 0;
+  background-color: #333; 
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  display: none; 
+  width: 200px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.navbar-menu.active {
+  display: block; 
+}
+
+.navbar-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navbar-menu li {
+  margin: 15px 0; 
+}
+
+.navbar-menu a {
+  color: white;
+  text-decoration: none; 
+  font-size: 18px;
+  display: block;
+  padding: 5px 10px; 
+}
+
+.navbar-menu a:hover {
+  background-color: rgb(163, 111, 47); 
+  color: #333; 
+  border-radius: 4px; 
+}
+.dashboard-table-container {
+  margin-top: 120px;
+  margin-left: 50px;  
+  margin-right: 30%; 
+  width: 40%; 
+  height: auto; 
+  max-height: 400px; 
+  padding: 10px;
+  overflow-y: auto;
+}
+
+
+.dashboard-table {
+  width: 100%; 
+  border-collapse: collapse; 
+  background-color: #e1d6c1;
+  box-shadow: 0 4px 8px rgba(75, 50, 9, 0.1); 
+  border-radius: 10px; 
+}
+
+.dashboard-table th, .dashboard-table td {
+  padding: 8px;
+  text-align: left; 
+  border-bottom: 1px solid #ddd; 
+}
+
+.dashboard-table th {
+  background-color: #87683c; 
+  color: white; 
+  font-size: 16px; 
+}
+
+.dashboard-table td {
+  color: #555; 
+  font-size: 14px; 
+}
+
+.dashboard-table tr:hover {
+  background-color: #e2bc7f; 
+  color: white; 
+}
+
+.dashboard-table tr:last-child td {
+  border-bottom: none; 
+}
