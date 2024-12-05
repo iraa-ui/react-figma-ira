@@ -1,0 +1,44 @@
+.dashboard-container{
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  background-image: url('/../../public/assets/img/bg3.jpg');
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+}
+.navbar-expand-lg {
+  background-color: rgb(84, 61, 29); 
+  color: #ffffff; 
+  padding: 10px 20px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+  width: 100%; 
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  z-index: 1000; 
+  display: flex; 
+  align-items: center; 
+  justify-content: flex-start; 
+  height: 10%;
+}
+  
+ 
+  /* Styling untuk tombol hamburger dan ikon */
+.navbar-toggler {
+  background: none; /* Menghilangkan background tombol */
+  border: none; /* Menghilangkan border */
+  font-size: 24px; /* Ukuran ikon */
+  color: #333; /* Warna ikon */
+  cursor: pointer; /* Kursor pointer untuk tombol */
+  padding: 10px; /* Memberikan ruang di sekitar ikon */
+  margin-right: 3%;
+}
+
+.navbar-toggler:hover {
+  color: #d3e1ef; /* Warna saat hover */
+}
+
+.navbar-toggler .fa-bars {
+  font-size: 2rem; /* Ukuran font khusus untuk ikon */
+}
+
