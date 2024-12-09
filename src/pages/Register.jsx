@@ -17,10 +17,10 @@ function RegisterForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Tambahkan logika untuk validasi atau mengirim data ke backend di sini
+    
     console.log("Form submitted:", formData);
 
-    // Navigasi ke dashboard
+    
     navigate("/dashboard");
   };
 
