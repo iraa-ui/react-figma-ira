@@ -1,8 +1,7 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React from "react";
 import "./../styles/register.css";
 
-function RegisterForm() {
+function Register() {
   const [formData, setFormData] = useState({
     username: "",
     email: "",
@@ -67,4 +66,4 @@ function RegisterForm() {
   );
 }
 
-export default RegisterForm;
+export default Register;
