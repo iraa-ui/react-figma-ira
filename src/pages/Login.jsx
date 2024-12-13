@@ -12,9 +12,6 @@ const Login = () => {
       className="wrapper"
       style={{
         backgroundImage: `url(${background})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed',
       }}
     >
       <div className="login-page">
