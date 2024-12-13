@@ -1,6 +1,6 @@
 import React from "react";
 import "./../styles/register.css";
-
+import { Link } from 'react-router-dom';
 function Register() {
   const [formData, setFormData] = useState({
     username: "",
