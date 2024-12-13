@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faHome, faSignInAlt, faUserPlus, faSignOutAlt } from '@fortawesome/free-solid-svg-icons'; // Import ikon
-import { Link } from 'react-router-dom'; 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faHome, faSignInAlt, faUserPlus, faSignOutAlt } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 import "./../styles/dashboard.css";
 
 function Dashboard() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false); 
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const dataAbsensi = [
     "Andra Alfairuz Medani",
@@ -31,9 +31,14 @@ function Dashboard() {
     "Fajar",
   ];
 
-  const handleMenuToggle = () => {
-    setIsMenuOpen(!isMenuOpen); 
-  };
+  const navLinks = [
+    { path: "/home", icon: faHome, label: "Home" },
+    { path: "/login", icon: faSignInAlt, label: "Login" },
+    { path: "/register", icon: faUserPlus, label: "Register" },
+    { path: "/login", icon: faSignOutAlt, label: "Logout" },
+  ];
+
+  const handleMenuToggle = () => setIsMenuOpen(!isMenuOpen);
 
   return (
     <div className="dashboard-container">
@@ -45,11 +50,13 @@ function Dashboard() {
 
         <div className={`navbar-menu ${isMenuOpen ? "active" : ""}`}>
           <ul>
-            <li><Link to="/home"><FontAwesomeIcon icon={faHome} /> Home</Link></li>
-            <li><Link to="/home"><FontAwesomeIcon icon={faHome} /> Home</Link></li>
-            <li><Link to="/login"><FontAwesomeIcon icon={faSignInAlt} /> Login</Link></li>
-            <li><Link to="/register"><FontAwesomeIcon icon={faUserPlus} /> Register</Link></li>
-            <li><Link to="/home"><FontAwesomeIcon icon={faSignOutAlt} /> Logout</Link></li> {/* Logout menuju ke /home */}
+            {navLinks.map((link, index) => (
+              <li key={index}>
+                <Link to={link.path}>
+                  <FontAwesomeIcon icon={link.icon} /> {link.label}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
       </nav>
