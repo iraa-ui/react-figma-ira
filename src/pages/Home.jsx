@@ -2,10 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom'; 
 import '../styles/home.css'; 
 import logo from '/assets/img/logo.png'; 
+import background from '/assets/img/bg.jpg'; 
+
 
 const Home = () => {
   return (
     <div className="home-container">
+      <img src={background} alt="background" className="background-image"/>
       <nav className="navbar navbar-expand-lg">
         <img src={logo} alt="Logo" />
         <h2 className="text-nowrap">Smk Prakarya Internasional</h2>
