@@ -4,9 +4,6 @@ import background from '/assets/img/bg1.jpg';
 
 
 const Login = () => {
-  const handleLogin = () => {
-    window.location.href = '/Login'; // Fungsi untuk navigasi
-  };
 
   return (
     <div className="background-login">
@@ -20,7 +17,7 @@ const Login = () => {
             <div className="input-box">
               <input type="password" placeholder="Masukan Password" required />
             </div>
-            <button type="button" className="btn btn-dark" onClick={handleLogin}>Log in</button>
+            <button type="button" className="btn btn-dark">Log in</button>
             <div className="register-link">
               <p>Don't have an account?</p>
               <a href="/Register">Register</a>
