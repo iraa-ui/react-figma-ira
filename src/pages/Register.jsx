@@ -1,10 +1,12 @@
-import React from 'react';
-import '../styles/register.css'; 
-import background from '/assets/img/bg2.jpg';
+import React from "react";
+import "../styles/register.css";
+import background from "/assets/img/bg2.jpg";
 
 const Register = () => {
+  alert("Komponen Register dirender"); // Tambahkan di sini
+
   const handleLogin = () => {
-    window.location.href = '/Register'; 
+    window.location.href = "/dashboard"; // Fungsi untuk navigasi
   };
 
   return (
@@ -22,7 +24,13 @@ const Register = () => {
             <div className="input-box">
               <input type="password" placeholder="Masukan Password" required />
             </div>
-            <button type="button" className="btn btn-dark" onClick={handleLogin}>Register <a href="/dashboard"></a></button>
+            <button
+              type="button"
+              className="btn btn-dark"
+              onClick={handleLogin}
+            >
+              Register
+            </button>
             <h4>XI PPLG 2</h4>
           </form>
         </div>
