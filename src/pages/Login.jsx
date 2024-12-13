@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import '../styles/login.css'; // Pastikan file CSS ini benar
 import background from '/assets/img/bg1.jpg'; // Path harus sesuai dengan struktur proyek Anda
 
