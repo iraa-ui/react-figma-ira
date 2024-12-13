@@ -51,7 +51,7 @@ h1 {
 
 /* Button styling */
 .btn-dark {
-  width: 100%; /* Full width untuk tampilan lebih seragam */
+  width: 50%; /* Full width untuk tampilan lebih seragam */
   padding: 10px;
   background-color: #333;
   color: white;
