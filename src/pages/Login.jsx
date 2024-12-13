@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/login.css'; // Pastikan file CSS ini benar
+import background from '/assets/img/bg1.jpg';
 
 const Login = () => {
   const handleLogin = () => {
@@ -8,6 +9,7 @@ const Login = () => {
 
   return (
     <div className="wrapper">
+      <img src={background} alt="Logo" />
       <div className="login-page">
         <form>
           <h1>Silahkan Login</h1>
