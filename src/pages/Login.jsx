@@ -17,7 +17,7 @@ const Login = () => {
             <div className="input-box">
               <input type="password" placeholder="Masukan Password" required />
             </div>
-            <button type="button" className="btn btn-dark">Log in</button>
+            <button type="button" className="btn btn-dark" >Log in</button>
             <div className="register-link">
               <p>Don't have an account?</p>
               <a href="/Register">Register</a>
