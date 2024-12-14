@@ -3,7 +3,7 @@ import "../styles/register.css";
 import background from "/assets/img/bg2.jpg";
 
 const Register = () => {
-  alert("Komponen Register dirender"); // Tambahkan di sini
+  
 
   const handleLogin = () => {
     window.location.href = "/dashboard"; // Fungsi untuk navigasi
